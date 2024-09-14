@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Assets/icon.png">
+    <title>"डाक-INDIA" WEBSITE FOR ALL</title>
+    
+   <script> document.addEventListener("DOMContentLoaded", function () {
+        const artPieces = document.querySelectorAll('.art-piece');
+    
+        artPieces.forEach(artPiece => {
+            artPiece.addEventListener('mouseenter', () => {
+                artPiece.classList.add('hovered');
+            });
+    
+            artPiece.addEventListener('mouseleave', () => {
+                artPiece.classList.remove('hovered');
+            });
+        });
+    });</script>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    opacity: 0; /* Start with invisible body */
+    animation: fadeIn 5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.art-piece {
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.art-piece img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.art-piece .description {
+    padding: 15px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.art-piece:hover {
+    transform: scale(1.05);
+}
+
+.art-piece:hover img {
+    opacity: 0.7;
+}
+
+.art-piece:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.exhibition-section {
+            padding: 20px 20px;
+            margin-top: 60px;
+        }
+     
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .artwork {
+            background-color: white;
+            margin: 10px 10px 10px 10px;
+            padding: 20px;
+            border-radius: 10%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: calc(33% - 40px);
+        }
+        .artwork img {
+            max-width: 50%;
+            border-radius: 5%;
+        }
+     
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>TimeLine</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="art-piece" id="art1">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-16.jpeg" alt="Art Piece 1">
+           
+        </div>
+        <div class="art-piece" id="art2">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-11.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art3">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-17.jpeg" alt="Art Piece 3">
+        </div>
+        <div class="art-piece" id="art4">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-13.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art5">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-14.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art6">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-15.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art1">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-21.jpeg" alt="Art Piece 1">
+           
+        </div>
+        <div class="art-piece" id="art2">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-11.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art3">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-20.jpeg" alt="Art Piece 3">
+        </div>
+        <div class="art-piece" id="art4">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-13.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art5">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-14.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art6">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-15.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art1">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-22.jpeg" alt="Art Piece 1">
+           
+        </div>
+        <div class="art-piece" id="art2">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-11.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art3">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-20.jpeg" alt="Art Piece 3">
+        </div>
+        <div class="art-piece" id="art4">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-13.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art5">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-14.jpeg" alt="Art Piece 2">
+           
+        </div>
+        <div class="art-piece" id="art6">
+            <img src="Assets/drive-download-20240831T095714Z-001/Unknown-15.jpeg" alt="Art Piece 2">
+           
+        </div>
+    </div>
+
+    <div id="section1" class="exhibition-section">
+        <div class="section-content">
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/50-university-of-delhi-centenary-year-2022-40-philately-4-original-imagjcp2qhascggv.jpeg.webp" alt="Artwork 1">
+            </div>
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/images-1.jpeg" alt="Artwork 2">
+            </div>
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/Arvind-N.-Mafatlal-Postage-Stamp-600x525.png" alt="Artwork 3">
+            </div>
+        </div>
+    </div>
+
+    <div id="section2" class="exhibition-section">
+        <div class="section-content">
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/1947_India_Flag_3½_annas.jpg" alt="Artwork 4">
+            </div>
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/Kashmere-Gate-Delhi-Postage-stamps.png" alt="Artwork 5">
+            </div>
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/Unknown-11.jpeg" alt="Artwork 6">
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="exhibition-section">
+        <div class="section-content">
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/Unknown-5.jpeg" alt="Artwork 7">
+            </div>
+            <div class="artwork">
+                <img src="Assets/drive-download-20240831T095714Z-001/Kashmere-Gate-Delhi-Postage-stamps.png">
+            </div>
+           
+        </div>
+    </div>
+
+    <footer>
+        <p> &copy; "डाक-INDIA" 2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
