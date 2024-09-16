@@ -1,26 +1,7 @@
 *{
     margin: 0PX auto;
-}
-@media screen and (max-width: 768px) {
-    .content {
-        font-size: 16px; /* Larger text for smaller screens */
-        padding: 10px;
-    }
-}
 
-@media screen and (max-width: 480px) {
-    .header, .footer {
-        display: none; /* Hide less important elements */
-    }
 }
-
-/* Fluid layout */
-.container {
-    width: 100%;
-    max-width: 1200px; /* Adds a maximum width */
-    margin: 0 auto;
-}
-
 
 body{
     height: 95vh;
